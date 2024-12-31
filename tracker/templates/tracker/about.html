@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'tracker/about.css' %}">
+    <title>About</title>
+</head>
+
+<body>
+    <div class="about-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Welcome to FinanceTracker</h2>
+                    <p>Track your finances effortlessly and stay in control!</p>
+                </div>
+                <div class="card-back">
+                    <h3>About Ayushi</h3>
+                    <p class="about-text">
+                        Hey there! I'm Ayushi, and I built this web application to help you manage your expenses and keep track of your money. It's designed to be easy-to-use, allowing you to:
+                    </p>
+                    <ul>
+                        <li>Add money to your account</li>
+                        <li>Track your expenses</li>
+                        <li>View your total balance and expenses</li>
+                    </ul>
+                    <p>
+                        I built this as a project for my CS50W course from Harvard, and I hope it helps you stay financially organized!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="Go Back" onclick="goBack()" class="btn-back">
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
